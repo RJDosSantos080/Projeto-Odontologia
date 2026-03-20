@@ -137,3 +137,7 @@
   };
 
 })();
+
+
+@media (max-width: 429px) {
+    .text-descr-blog .paragrafo:first-child {
