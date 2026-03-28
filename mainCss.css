@@ -249,7 +249,9 @@
     line-height: 1.4;
     color: #323232;
     max-width: 341.22px;
-    margin: 0 auto
+    margin: 0 auto;
+    list-style-type: disc; /* bolinha padrão */
+    padding-left: 20px;
 }
 
 .centralizar {
@@ -1232,12 +1234,21 @@ img {
     .text-descr-blog .paragrafo:first-child {
         margin: 0px 20px 10px;
         text-align: justify;
+        padding: 0px 40px;
     }
 
     .text-descr-blog .paragrafo {
         padding: 10px;
         text-align: justify;
-        margin: 0 0 20px
+        margin: 0 0 20px;
+    }
+
+    .paragrafo{
+        font-size: 16px;
+        padding: 0 10px;
+        text-align: justify;
+        margin: 0 20px 10px;
+        width: 400px;
     }
 
     .text-descr-blog .botao-geral {
@@ -1257,7 +1268,11 @@ img {
     justify-content: space-evenly;
     align-items: center;
     margin: 0px 30px;
-}
+    }
+
+    /* .cortext{
+        padding-left: 30px;
+    } */
 }
 
 @media (max-width:376px) {
@@ -1416,6 +1431,8 @@ img {
     }
 }
 
+
+
 @media(max-width: 1024px) {
     .titulo-p {
         font-size: 2rem
@@ -1546,7 +1563,7 @@ img {
     }
 }
 
-@media (max-width: 429px) {
+@media (max-width: 430px) {
     .corpo-nav a {
         font-size: .7rem
     }
@@ -1663,13 +1680,15 @@ img {
     .btns-inicio .orc {
         display: block;
         padding: 8px 25px;
-        font-size: 16px
+        font-size: 16px;
+        width: 100%;
     }
 
     .btns-inicio .serv {
         display: block;
         padding: 8px 15px;
-        font-size: 16px
+        font-size: 16px;
+        width: 100%;
     }
 
     .imagem-inicio img {
@@ -1679,7 +1698,7 @@ img {
     }
 }
 
-@media (max-width:486px){
+@media (max-width:487px){
      .corpo-nav a {
         font-size: .7rem
     }
@@ -1702,6 +1721,12 @@ img {
         height: auto;
         align-items: center;
         margin: auto;
+    }
+
+        .text-descr-blog .paragrafo:first-child {
+        margin: 0px 20px 10px;
+        text-align: justify;
+        /* padding: 0px 40px; */
     }
 
 
@@ -1746,10 +1771,17 @@ img {
         width: 300px
     }
 
-    .descri-sobre .paragrafo {
-        font-size: 16px;
+    .corpo-sobre{
+        min-width: 0;
+    }
+
+    .corpo-sobre .paragrafo {
+        /* font-size: 16px;
         text-align: justify;
-        margin: 20px 20px 30px
+        margin: 20px 20px 30px; */
+        text-align: justify;
+        margin: 0 20px 10px;
+        width: 335px;
     }
 
         .descri-sobre .titulo-s {
@@ -1929,7 +1961,8 @@ img {
     }
 
     .centralizar .botao-geral {
-        display: block
+        display: block;
+        width: 40%;
     }
 
     .card-servico img {
@@ -2113,6 +2146,13 @@ img {
 }
 
 @media (max-width:606px) {
+    body {
+        margin: 0;
+        max-width: 100%;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
+
     .img-sobre img {
         margin: 0 auto;
         border-radius: .625rem;
@@ -2121,7 +2161,10 @@ img {
 
     .descri-sobre .paragrafo {
         font-size: 16px;
-        padding: 0 10px
+        padding: 0 10px;
+        text-align: justify;
+        margin: 0 20px 10px;
+        width: 400px;
 
     }
 }
